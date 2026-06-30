@@ -1,23 +1,40 @@
-# Monitor de Status de Servicos
+<p align="center">
+  <img src="./docs/thumbnail.svg" alt="Thumbnail do Service Status Monitor" width="100%" />
+</p>
 
-Painel de status para verificar disponibilidade de endpoints, historico de resposta e prioridade de incidentes.
+<h1 align="center">Service Status Monitor</h1>
+
+<p align="center">
+  Monitor simples de servicos com checagem manual de endpoints, latencia e status operacional.
+</p>
+
+<p align="center">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-1d4ed8?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Supabase" src="https://img.shields.io/badge/Supabase-Backend-0f766e?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img alt="Monitoring" src="https://img.shields.io/badge/Monitoring-Status%20Check-b91c1c?style=for-the-badge" />
+</p>
+
+## Problema que resolve
+
+Quando uma API ou servico cai, times pequenos precisam de uma forma rapida de validar status, latencia e dono do incidente. Este projeto entrega uma base leve para observabilidade operacional.
+
+## O que o app entrega
+
+- cards de saude operacional por endpoint
+- checagem manual via API route
+- leitura de status, latencia e horario da ultima verificacao
+- suporte a demo data e integracao opcional com Supabase
 
 ## Stack
 
-- Next.js
+- Next.js 15
 - TypeScript
 - Supabase
-- CSS
+- CSS global customizado
 - GitHub Actions
 
-## Entregas do MVP
-
-- Checagem manual via API route
-- Dashboard de status operacional
-- Cards de latencia e SLA
-- Workflow de CI pronto para GitHub
-
-## Rodar localmente
+## Como rodar
 
 ```bash
 npm install
@@ -25,28 +42,22 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Se voce nao preencher as chaves do Supabase, o app sobe com dados de demonstracao.
-
-## Variaveis de ambiente
+Variavel extra opcional:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
 MONITOR_TIMEOUT_MS=4000
 ```
 
-## Schema base
+## Arquivos importantes
 
-```sql
-create table if not exists services (
-  id text primary key,
-  name text not null,
-  url text not null,
-  owner text not null,
-  sla_target text not null,
-  current_status text not null check (current_status in ('operational', 'degraded', 'down')),
-  latency_ms integer not null default 0,
-  checked_at timestamptz not null default now()
-);
-```
+- `app/page.tsx`: painel de status
+- `app/api/check/route.ts`: checagem manual do endpoint
+- `components/status-checker.tsx`: interface para rodar validacoes
+- `supabase/schema.sql`: estrutura base do monitor
 
+## O que este projeto demonstra
+
+- entendimento de observabilidade e confiabilidade
+- uso de API route para logica server-side simples
+- clareza para exibir status operacional
+- portfolio com cara de software util e monitoravel

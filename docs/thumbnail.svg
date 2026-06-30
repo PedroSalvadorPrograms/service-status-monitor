@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="30" x2="1230" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#450A0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1110" cy="140" r="180" fill="#FB7185" fill-opacity="0.14"/>
+  <circle cx="220" cy="540" r="210" fill="#38BDF8" fill-opacity="0.08"/>
+  <rect x="56" y="56" width="1168" height="528" rx="32" fill="#111827" stroke="#374151"/>
+  <rect x="96" y="96" width="186" height="34" rx="17" fill="#7F1D1D" fill-opacity="0.34" stroke="#FB7185"/>
+  <text x="118" y="119" fill="#FECDD3" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Portfolio project</text>
+  <text x="96" y="184" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700">Service Status Monitor</text>
+  <text x="96" y="226" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="24">Endpoint checks, latency and operational visibility</text>
+  <rect x="96" y="280" width="1084" height="230" rx="28" fill="#0F172A" stroke="#374151"/>
+  <text x="128" y="324" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Service health</text>
+  <rect x="128" y="350" width="1020" height="46" rx="16" fill="#111827" stroke="#374151"/>
+  <circle cx="158" cy="373" r="9" fill="#22C55E"/>
+  <text x="184" y="380" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="20">Auth portal  |  operational  |  180 ms</text>
+  <rect x="128" y="412" width="1020" height="46" rx="16" fill="#111827" stroke="#374151"/>
+  <circle cx="158" cy="435" r="9" fill="#F59E0B"/>
+  <text x="184" y="442" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="20">Monitoring API  |  degraded  |  680 ms</text>
+  <rect x="128" y="474" width="1020" height="46" rx="16" fill="#111827" stroke="#374151"/>
+  <circle cx="158" cy="497" r="9" fill="#EF4444"/>
+  <text x="184" y="504" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="20">Remote access  |  down  |  no response</text>
+  <rect x="912" y="112" width="236" height="120" rx="24" fill="#111827" stroke="#374151"/>
+  <text x="940" y="154" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Average latency</text>
+  <text x="940" y="202" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">286 ms</text>
+  <text x="96" y="554" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="22">Strong portfolio piece for reliability, backend logic and ops visibility.</text>
+</svg>
